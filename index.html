@@ -5,10 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Document</title>
+    <title>Stein.World DPS Calculator</title>
 </head>
 <body>
-    
+    <div class="input">
+        <div class="wrap">
+                Weapon Damage Range:
+                <span class="weapon-damage">
+                <input id="min-weapon-dmg" class="wep-range" name="min-dmg" type="number" placeholder="min" required>
+                -
+                <input id="max-weapon-dmg" class="wep-range" name="max-dmg" type="number" placeholder="max" required>
+            </span>
+            Weapon Bonus %:
+            <input id="weapon-bonus" class="" name="wep-bonus" type="number" required>
+            Weapon Cooldown:
+            <input id="weapon-cooldown" class="" name="wep-cooldown" type="number" placeholder="seconds" required>
+            Player Bonus Damage:
+            <input id="player-bonus-dmg" class="" name="bonus-dmg" type="number" required>
+            Crit Bonus %:
+            <input id="crit-bonus" class="" name="crit-bonus" type="number" required>
+            Crit Chance %:
+            <input id="crit-chance" class="" name="crit-chance" type="number" required>
+            Cooldown Reduction %:
+            <input id="player-cooldown" class="" name="player-cooldown" type="number" required>
+            <button class="btn" onclick="calcDps()">Calculate</button>
+        </div>
+        <div class="wrap">
+            <div id="result">
+                Result
+            </div>
+        </div>
+    </div>
     <script src="scripts.js"></script>
 </body>
 </html>
